@@ -7,8 +7,8 @@ namespace ResearchAdvisor.Domain
     {
         public static void AddDomain(this IServiceCollection serviceCollection)
         {
-            serviceCollection.AddTransient(typeof(IRequestDeal<>), typeof(DealDomain<>));
-            serviceCollection.AddTransient(typeof(IRequestResearch<>), typeof(ResearchDomain<>));
+            serviceCollection.AddTransient(typeof(IRequestResearchPaper<>), typeof(ResearchPaperDomain<>));
+            serviceCollection.AddTransient(typeof(IRequestUser<>), typeof(UserDomain<>));
         }
     }
 }

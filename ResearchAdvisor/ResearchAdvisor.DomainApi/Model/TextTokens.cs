@@ -2,8 +2,8 @@
 
 namespace ResearchAdvisor.DomainApi.Model
 {
-    public class DealInfo
+    public class TextTokens
     {
-        public List<Deal> Deals { get; set; }
+        public string[] Words { get; set; }
     }
 }
